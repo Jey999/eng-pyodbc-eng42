@@ -48,3 +48,22 @@ class ConnectMsS():
 
         return (sum(prices)/len(prices))
 
+#CRUD
+# create 1 entry
+    # use insert
+    # the cursor can not make transaction (go to documentation)
+#read all entries
+    # fetch all record and return as a list of dictionaries
+#read one entry
+    #fetch a specific record
+    #get one value using id
+
+# update 1 entry
+    #the id of the record to update
+    # update the specific record
+            #the cursor cannot make transaction (go to documentation)
+
+#destroy / one entry
+
+    # the id of th specific record
+    #destory the record
