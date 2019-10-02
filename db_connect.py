@@ -27,24 +27,24 @@ cursor.execute("SELECT * FROM Customers")
 #This is bad
 
 
-rows = cursor.execute("SELECT *FROM Customers").fetchall()
-print(rows)
+# rows = cursor.execute("SELECT *FROM Customers").fetchall()
+# print(rows)
 #print(len(rows)) #if this is a list then we can iterate
 
-rows = cursor.execute("SELECT * FROM Products").fetchall()
+# rows = cursor.execute("SELECT * FROM Products").fetchall()
 #we can iterate
-for record in rows:
-    print(type(record))
-    print(record.UnitPrice) #we can access the column of a specific record
+# for record in rows:
+#     print(type(record))
+#     print(record.UnitPrice) #we can access the column of a specific record
 
     # however, this is dangerous as we said.
     # because we can clog our machine with too much data
     #we can use while loop to be more efficient
 
-rows = cursor.execute("SELECT* FROM Products")
+# rows = cursor.execute("SELECT* FROM Products")
 
-while True:
-    record= rows.fetchone()
-    if record is None:
-        break
-    print(record.UnitPrice)
+# while True:
+#     record= rows.fetchone()
+#     if record is None:
+#         break
+#     print(record.UnitPrice)
